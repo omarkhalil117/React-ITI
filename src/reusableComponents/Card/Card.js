@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
-import './Card.module.css'
+import './Card.css'
 function Card(props) {
-  const bgColor = props.id%2 ===0 ? 'black' : 'grey'
   return (
     <>
-    <div className='text-center col-4 p-2 card' style={{backgroundColor:bgColor}}>
+    <div className={`col-4 ${props.id %2 === 0 ? 'bg-black' : 'bg-grey'}`} >
         <h2 className='p-5 text-white'>{props.content}</h2>
     </div>
     </>

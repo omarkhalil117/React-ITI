@@ -1,0 +1,13 @@
+.card{
+    width: 300px;
+    height: 300px;
+}
+
+.bg-grey {
+    background-color: grey;
+}
+
+.bg-black {
+    background-color: black;
+}
+
