@@ -1,18 +1,23 @@
 import React from 'react'
 import BasicProgressbar from '../../controls/basicProgressbar'
-
+import './skills.module.css'
 function Skills() {
+
+  const skills = [
+    {id:1,skill:'Javascript', percent:50},
+    {id:2,skill:'HTML', percent:60},
+    {id:3,skill:'CSS', percent:70},
+    {id:4,skill:'Python', percent:80},
+  ]
+
   return (
     <>
     <div className='container p-5'>
 
     <h1 className='text-center'>Skills</h1>
-        
-        <BasicProgressbar percent={50} skill='Javascript'></BasicProgressbar>
-        <BasicProgressbar percent={60} skill='HTML'></BasicProgressbar>
-        <BasicProgressbar percent={70} skill='CSS'></BasicProgressbar>
-        <BasicProgressbar percent={80} skill='python'></BasicProgressbar>
-
+        {skills.map((el)=>{
+          return <BasicProgressbar percent={el.percent} skill={el.skill} key={el.id}></BasicProgressbar>
+        })}
     </div>
     </>
   )

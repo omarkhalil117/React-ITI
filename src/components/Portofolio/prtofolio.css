@@ -1,0 +1,9 @@
+.cardElement:nth-child(odd)
+{
+    background-color: gray;
+}
+
+.cardElement:nth-child(even)
+{
+    background-color: aquamarine;
+}

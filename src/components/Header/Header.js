@@ -1,6 +1,7 @@
 import React from 'react'
-import './header.css'
 import image from '../../assets/landing-pages-that-convert.png' 
+import './header.css'
+
 function Header() {
     return (  
         <>

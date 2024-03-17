@@ -1,5 +1,4 @@
 /* eslint-disable no-global-assign */
-/* eslint-disable react/prop-types */
 import React from 'react'
 
 function BasicProgressbar(props) {

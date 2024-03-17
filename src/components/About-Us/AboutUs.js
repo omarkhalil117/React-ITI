@@ -1,6 +1,6 @@
 import React from 'react'
 import BasicButtons from '../../controls/basicButtons';
-import './aboutUs.css'
+import './aboutUs.module.css'
 function AboutUs() {
     return ( 
     <>
@@ -11,9 +11,8 @@ function AboutUs() {
     <p className='d-block col'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the  standard dummy text ever since the 1500s, 
         when an unknown printer took a galley of </p>
-
     </div>
-        <BasicButtons option='contained' text='Download CV'></BasicButtons>
+        <BasicButtons variant='contained' text='Download CV' className='text-center'></BasicButtons>
     </> 
     );
 }
