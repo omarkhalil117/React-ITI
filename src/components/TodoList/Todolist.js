@@ -27,17 +27,11 @@ function TodoList() {
     };
     
     const toggleDone = (id) => {
-        const updatedTodos = todos.map(todo => {
-            if (todo.id === id) {
-                return {
-                    ...todo,
-                    done: !todo.done
-                };
-            }
-            return todo;
-        });
+        const toUpdate = todos.find((el) => el.id === id)
 
-        setTodos(updatedTodos);
+        toUpdate.done = !toUpdate.done
+
+        setTodos([...todos])
     };
 
 
