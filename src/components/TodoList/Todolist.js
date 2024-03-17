@@ -20,7 +20,12 @@ function TodoList() {
             console.log(todos)
         }
     };
-
+    
+    const handleDelete = (id) => {
+        const updatedTodos = todos.filter(todo => todo.id !== id);
+        setTodos(updatedTodos);
+    };
+    
     const toggleDone = (id) => {
         const updatedTodos = todos.map(todo => {
             if (todo.id === id) {
@@ -35,10 +40,6 @@ function TodoList() {
         setTodos(updatedTodos);
     };
 
-    const handleDelete = (id) => {
-        const updatedTodos = todos.filter(todo => todo.id !== id);
-        setTodos(updatedTodos);
-    };
 
     return (
         <div className='container mt-5'>
